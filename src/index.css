@@ -1,5 +1,11 @@
+:root {
+  --primary: #3e4639;
+  --secondary: #7a5c43;
+  --third: #ece2d8;
+}
+
 * {
-  font-family: 'Hoefler text','Palatino','Didot';
+  font-family: 'Palatino','Didot';
   margin: 0px;
   padding: 0px;
 }
@@ -8,13 +14,18 @@
   border: solid red 3px;
 }
 
+body {
+  background-color: var(--third);
+}
+
+/* Navbar/Header style */
 .navbar {
-  background-color: #3e4639;
+  background-color: var(--primary);
   padding-left: 10px;
 }
 
 .header {
-  color: #ece2d9;
+  color: var(--third);
   visibility: hidden;
 }
 
@@ -36,4 +47,33 @@
   .header {
     visibility: initial;
   }
+}
+
+/* Home styling */
+.headshot {
+  border-radius: 50%;
+  width: 90%; height: 90%;
+  margin-top: 30px;
+  border: var(--primary) solid 8px;
+  box-shadow: 0 0 10px black;
+}
+
+.profession {
+  font-size: 55px;
+  color: var(--primary);
+}
+
+.description {
+  color: var(--primary);
+}
+
+.singleCol {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.social-icon a {
+  color: var(--primary);
+  font-size: 3rem;
+  padding: 20px;
 }
