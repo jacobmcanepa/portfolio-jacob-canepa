@@ -15,12 +15,15 @@ function App() {
       break
     case "/about":
       component = <About />
+      document.title = "About"
       break
     case "/work":
       component = <Work />
+      document.title = "Work"
       break
     case "/contact":
       component = <Contact />
+      document.title = "Contact"
       break
     default:
   }
