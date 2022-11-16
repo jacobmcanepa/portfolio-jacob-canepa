@@ -8,10 +8,10 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#home" className='mx-3'>Home</Nav.Link>
-            <Nav.Link href="#about" className='mx-3'>About</Nav.Link>
-            <Nav.Link href="#work" className='mx-3'>Work</Nav.Link>
-            <Nav.Link href="#contact" className='mx-3'>Contact</Nav.Link>
+            <Nav.Link href="/home" className='mx-3'>Home</Nav.Link>
+            <Nav.Link href="/about" className='mx-3'>About</Nav.Link>
+            <Nav.Link href="/work" className='mx-3'>Work</Nav.Link>
+            <Nav.Link href="/contact" className='mx-3'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
