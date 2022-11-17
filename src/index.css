@@ -120,9 +120,9 @@ html, body {
 
 .about-card, .skills-card {
   background-color: rgba(255, 255, 255, 0.7);
-  margin: 30px 10px;
-  padding: 50px 0;
   color: var(--primary);
+  margin: 50px 0;
+  padding-top: 40px;
 }
 
 .about-card h2, .skills-card h2 {
@@ -133,6 +133,10 @@ html, body {
   font-size: 1.3rem;
 }
 
+.about-card {
+  width: 100vw;
+}
+
 .skills-card {
   width: 100vw;
 }
@@ -140,6 +144,12 @@ html, body {
 .skills-card ul {
   list-style: none;
   text-align: left;
+  padding: 0 100px 0 50px;
+}
+
+.skills-card ul li {
+  margin: 15px 0;
+  border-bottom: var(--primary) solid 3px;
 }
 
 @media (min-width: 991.98px) {
@@ -151,19 +161,17 @@ html, body {
   }
 
   .about-card, .skills-card {
-    padding: 150px 0;
-  }
-
-  .about-card h2, .skills-card {
-    font-size: 6rem;
-  }
-
-  .about-card p, .skills-card ul {
-    font-size: 2rem;
+    height: 50vh;
+    position: relative;
   }
 
   .about-card {
-    padding-left: 10px;
+    bottom: 30px;
+    padding-left: 10px; 
     padding-right: 10px;
+  }
+
+  .skills-card {
+    top: 30px;
   }
 }
