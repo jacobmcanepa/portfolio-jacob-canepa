@@ -33,9 +33,6 @@ function App() {
       <Navigation />
       <main>
         {component}
-        <footer>
-          <p>Footer</p>
-        </footer>
       </main>
     </>
   );
