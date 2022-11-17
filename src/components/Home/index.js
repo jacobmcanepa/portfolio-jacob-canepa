@@ -11,8 +11,7 @@ function Home() {
         <p className='description mt-3'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
           condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie.
+          mi, ac feugiat metus aliquam maximus.
         </p>
       </div>
       <div className='social-icon'>

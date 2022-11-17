@@ -29,12 +29,15 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Navigation />
       <main>
         {component}
+        <footer>
+          <p>Footer</p>
+        </footer>
       </main>
-    </div>
+    </>
   );
 }
 
