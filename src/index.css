@@ -71,12 +71,12 @@ html, body {
 .profession {
   font-weight: bold;
   color: var(--primary);
-  font-size: 65px;
+  font-size: 3rem;
 }
 
 .description {
   color: var(--primary);
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 
 .social-icon a {
@@ -102,6 +102,12 @@ html, body {
   }
 }
 
+@media (max-width: 499.98px) {
+  .headshot {
+    width: 90%;
+  }
+}
+
 /* About style */
 .about-section {
   background-image: url('./assets/images/aboutphoto.jpg');
@@ -111,63 +117,51 @@ html, body {
   background-size: cover;
   color: var(--primary);
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
 .about-section article {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 50vw;
-  padding: 50px 20px 80px 20px; 
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 10px;
 }
 
-.about-section h2 {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 3rem;
-}
-
-.about-section p {
-  font-size: 1.2rem;
-}
-
-.skills-list {
-  margin-top: 60px;
-}
-
-.skills-list h3 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.about-section h2, .skills-list h3 {
+.about-section article h2, .skills-list h3 {
   font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+
+.about-section article p {
+  text-align: center;
 }
 
 .skills-list ul {
-  font-size: 1.3rem;
-  margin-top: 20px;
-  white-space: nowrap;
   font-weight: bold;
 }
 
-.skills-list ul li {
-  margin: 10px 0;
+.about-section article p, .skills-list ul {
+  font-size: 20px;
 }
 
-@media (max-width: 991.98px) {
-  .about-section article {
-    width: 100vw;
+@media (min-width: 767.98px) {
+  .skills-list {
+    margin-top: 30px;
+  }
+
+  .about-section article h2, .skills-list h3 {
+    font-size: 50px;
+  }
+
+  .about-section article p, .skills-list ul {
+    font-size: 25px;
   }
 }
 
-@media (max-width: 340.98px) {
-  .about-section article {
-    height: 90vh;
+@media (min-width: 991.98px) {
+  .about-section {
+    justify-content: flex-end;
   }
-
-  .skills-list ul {
-    font-size: 1rem;
-    padding-left: 0;
+  .about-section article {
+    width: 50vw;
   }
 }
