@@ -165,3 +165,48 @@ html, body {
     width: 50vw;
   }
 }
+
+/* Work style */
+.work-container {
+  height: 100vh;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--primary);
+  padding: 0 10px 0 10px;
+  margin-top: 20px;
+}
+
+.work-title h2 {
+  font-weight: bold;
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+.main-project {
+  background-color: var(--primary);
+  color: var(--third);
+  height: 450px;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 20px;
+}
+
+.sub-project {
+  background-color: var(--primary);
+  color: var(--third);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 20px 30px 30px 30px;
+  border-radius: 20px;
+}
