@@ -3,9 +3,11 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
-  let component
+  let component;
+  let isFooter = true;
   switch (window.location.pathname) {
     case "/":
       component = <Home />
@@ -20,6 +22,7 @@ function App() {
     case "/work":
       component = <Work />
       document.title = "Work"
+      isFooter = false;
       break
     case "/contact":
       component = <Contact />
@@ -28,14 +31,26 @@ function App() {
     default:
   }
 
-  return (
-    <>
+  if (isFooter) {
+    return (
+      <>
       <Navigation />
       <main>
         {component}
       </main>
-    </>
-  );
+      <Footer />
+      </>
+    );
+  } else {
+    return (
+      <>
+      <Navigation />
+      <main>
+        {component}
+      </main>
+      </>
+    );
+  }
 }
 
 export default App;

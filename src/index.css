@@ -163,12 +163,14 @@ html, body {
   }
   .about-section article {
     width: 50vw;
+    border-radius: 20px 0 0 20px;
   }
 }
 
 /* Work style */
 .work-container {
   height: 100vh;
+  margin-top: 60px;
 }
 
 .work-title {
@@ -191,7 +193,7 @@ html, body {
   background-color: var(--primary);
   color: var(--third);
   height: 550px;
-  margin: 30px 20px;
+  margin: 30px 20px 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,4 +260,16 @@ html, body {
   .contact-question {
     font-size: 100px;
   }
+}
+
+/* Footer style */
+footer {
+  background-color: var(--primary);
+  color: var(--third);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
