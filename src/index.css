@@ -210,3 +210,52 @@ html, body {
   margin: 20px 30px 30px 30px;
   border-radius: 20px;
 }
+
+/* Contact style */
+.contact-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./assets/images/contact-bg.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.contact-container {
+  background-color: var(--primary);
+  color: var(--third);
+  padding: 100px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-question {
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+.contact-me a {
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: var(--third);
+  font-size: 30px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+@media (min-width: 991.98px) {
+  .contact-container {
+    border-radius: 20px;
+  }
+
+  .contact-question {
+    font-size: 100px;
+  }
+}
