@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 function Work() {
   return (
     <section className='work-section'>
-      <Container fluid='xxl' className="work-container">
+      <Container fluid='xxxl' className="work-container">
         <Row className='work-row'>
           <Col sm={12} lg={4}>
             <div className='work-title'>
